@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+
+    --cor-fundo:#dbdbdb;
+    --cor-botao:#FFB050;
+    --cor-endereco:#4894FF;
+    --font-geral:"Montserrat", sans-serif;
+    --cor-conteudo:#FFFFFF;
+    --cor-fundo-clickado: #2727273f;
+}
+
+*{
+ padding: 0;
+ margin: 0;
+ border: 0;
+}
+
+body{
+    font-family: var(--font-geral);
+    background-color: var(--cor-fundo);
+}
+
+.cabecalho{
+    padding: 3em 5em 3em 2em;
+}
+
+.cabecalho__conteudo{
+    display: flex;
+}
+
+.cabecalho__perfil{
+    font-family: var(--font-geral);
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho__foto{
+    padding: 0 1em 0 0;
+}
+
+.cabecalho__paragrafo{
+    padding-top: 1em;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22.4px;
+}
+
+.principal__dia{
+    padding: 1em 1em 0 1em;
+    font-weight: 700;
+    size: 16px;
+}
+
+.principal__fundo{
+    margin: 1em 1em 1em 1em;
+    
+}
+
+.principal__conteudo{
+    background-color: var(--cor-conteudo);
+    display: flex;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid var(--cor-fundo);
+}
+
+.principal__abaixo{
+    background-color: var(--cor-conteudo);
+    display: flex;
+    border-radius: 0 0 5px 5px;
+    flex-direction: column;
+}
+
+.camera{
+    margin: auto;
+}
+
+.principal__foto{
+   margin: 10px 10px 10px 10px;
+}
+
+.detalhes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1px 1px 1px 1px;
+    
+}
+
+.nome__paciente{
+    text-align: justify;
+    margin: 0em 0em 0em 1.5em;
+}
+
+.linha{
+    display: flex;
+    margin: 0em 1em 0em 2em;
+    gap: 1em;
+}
+
+.chat{
+    margin: auto;
+    text-align: end;
+}
+
+.horario{
+    padding-left: 1em;
+}
+
+.contato{
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    gap: 20px;
+}
+
+.botao__com-cor{
+    background-color: var(--cor-botao);
+    border-radius: 10px;
+    margin: auto;
+    color: white;
+    padding: 20px 10px 20px 10px;
+}
+
+.botao__unico{
+    border-radius: 10px;
+    margin: auto;
+    color: white;
+    background-color: var(--cor-endereco);
+    border-radius: 10px;
+    margin: auto;
+    color: white;
+    padding: 20px 100px 20px 100px;
+}
+
+.botao__sem-cor{
+    margin: auto;
+    padding: 20px 10px 20px 10px;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+}
+
+.botoes__inferiores{
+    display: flex;
+    background-color: var(--cor-conteudo);
+}
+
+.alinhamento__botoes{
+    text-align: center;
+}
+
+.inferior{
+    text-align: center;
+    margin: auto;
+}
+
+.botao{
+    text-align: end;
+    position: static;
+}
+
+.desktop__lateral{
+    display: none;
+}
+
+.campo__cadastro{
+    display: none;
+}
+@media screen and (min-width: 580px){
+
+.phone__lateral{
+    display: none;
+}
+
+.cabecalho,
+.principal{
+    margin-left: 50%;
+}
+
+.flex__float{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.desktop__lateral{
+    display: block;
+    background-color: var(--cor-conteudo);
+    position: absolute;
+    padding:4% 1% 100vh 1%;
+}
+
+
+.botoes__inferiores{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.inferior{
+    list-style: none;
+    gap: 1rem;
+}
+
+.inferior:hover{
+    color: var(--cor-endereco);
+}
+
+.botao{
+    display: none;
+}
+
+.coteudo__cadastro{
+    text-align: end;
+    margin: 0% 0% 0% 70%;
+}
+
+.campo__cadastro{
+    display: block;
+    margin: 1em 1em 1em 1em;
+}
+
+.campo__texto{
+    padding: 15px 35px 15px 15px;
+    border: 0.3px solid rgb(184, 184, 184);
+    border-radius: 10px;
+}
+
+.flex__botoes{
+    display: block;
+    gap: 1em;
+    text-align: center;
+}
+
+.botoes__consulta{
+    background-color: var(--cor-endereco);
+    padding: 1em 0em 1em 0em;
+    border-radius: 10px;
+    border: 1px solid rgb(201, 201, 201);
+    color: var(--cor-conteudo);
+}
+
+.texto__botao{
+    font-size: larger;
+    font-weight: 600;
+}
+
+.consulta__nova{
+    background-color: var(--cor-endereco);
+    padding: 1em 0em 1em 0em;
+    border-radius: 10px;
+    border: 1px solid rgb(201, 201, 201);
+    color: var(--cor-conteudo);
+}
+
+.menu__cadastro{
+    border: 1px solid rgb(192, 192, 192);
+    background-color: rgb(255, 255, 255);
+    margin-top: 15%;
+    border-radius: 10px;
+}
+
+}
+
+@media screen and (min-width: 950px){
+
+.cabecalho,
+.principal{
+    margin-left: 30%;
+}
+}
